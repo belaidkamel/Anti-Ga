@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Anti_GA",
+  "description": "Block Google Analytics",
+  "version": "1.0",
+  "permissions": [
+    "webRequestBlocking",
+    "webRequest",
+    "<all_urls>",
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_title": "Anti GA",
+    "default_icon": "images/icon.png",
+    "default_popup": "html/popup.html"
+    
+  },
+  "background": {
+    "scripts": [ "js/background.js" ]
+  }
+}
